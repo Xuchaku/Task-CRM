@@ -1,0 +1,11 @@
+@import "./../../global/index.scss";
+.InputText {
+  outline: none;
+  border: 3px solid $bg-theme;
+  height: 70px;
+  width: 100%;
+  padding: 23px 24px;
+  border-radius: 10px;
+  font-size: $font-size-default;
+  margin-right: 24px;
+}

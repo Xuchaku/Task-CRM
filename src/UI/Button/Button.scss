@@ -1,0 +1,22 @@
+@import "./../../global/index.scss";
+.Button {
+  outline: none;
+  background-color: $bg-theme;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+  font-size: 26px;
+  font-weight: 700px;
+  border: none;
+  height: 70px;
+  border-radius: 10px;
+  padding: 19px 40px;
+  column-gap: 16px;
+}
+
+@media (max-width: 600px) {
+  .Button > span {
+    display: none;
+  }
+}
