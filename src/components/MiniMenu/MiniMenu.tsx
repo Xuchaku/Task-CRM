@@ -1,8 +1,19 @@
-import React from "react";
+import React, { FC } from "react";
 import "./MiniMenu.scss";
-const MiniMenu = () => {
+type MiniMenuPropsType = {
+  toggleMenu: boolean;
+  setToggleMenu: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const MiniMenu: FC<MiniMenuPropsType> = ({ toggleMenu, setToggleMenu }) => {
+  function toggleMenuHandler() {
+    setToggleMenu((prev) => !prev);
+  }
   return (
-    <div className="MiniMenu">
+    <div
+      className={`MiniMenu ${toggleMenu ? "active" : undefined}`}
+      onClick={toggleMenuHandler}
+    >
       <span></span>
       <span></span>
       <span></span>

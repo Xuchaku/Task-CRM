@@ -14,13 +14,18 @@
   }
   .Layout > div:nth-child(2) {
     position: absolute;
+    height: 100vh;
     left: -300px;
+  }
+  .Layout.activeMenu > div:nth-child(2) {
+    left: 0px;
   }
 }
 .Layout > div:nth-child(1) {
   grid-area: header;
 }
 .Layout > div:nth-child(2) {
+  transition: 0.3s;
   grid-area: sidebar;
 }
 .Layout > div:nth-child(3) {
