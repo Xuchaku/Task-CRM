@@ -12,8 +12,8 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route path="/" element={<News />}></Route>
         <Route path="address" element={<Address />}></Route>
+        <Route path="*" element={<ErrorPage />}></Route>
       </Route>
-      <Route path="*" element={<ErrorPage />}></Route>
     </Routes>
   );
 }

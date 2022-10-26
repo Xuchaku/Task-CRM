@@ -13,22 +13,32 @@ import Menu from "../types/Menu/Menu";
 export const menu: Menu[] = [
   { text: "Главная", component: home, id: 0, to: "/" },
   { text: "Поиск адресов", component: search, id: 1, to: "address" },
-  { text: "Таблицы", component: tables, id: 2, to: "/" },
-  { text: "Календарь", component: dates, id: 3, to: "/" },
-  { text: "Карты", component: maps, id: 4, to: "/" },
-  { text: "Виджеты", component: vidgets, id: 5, to: "/" },
+  { text: "Таблицы", component: tables, id: 2, to: "/tables" },
+  { text: "Календарь", component: dates, id: 3, to: "/dates" },
+  { text: "Карты", component: maps, id: 4, to: "/maps" },
+  { text: "Виджеты", component: vidgets, id: 5, to: "/vidgets" },
   {
     text: "Настройки",
     component: settings,
     id: 6,
-    to: "/",
+    to: "/settings",
     children: [
-      { text: "Настройки профиля", component: settingsProfile, id: 7, to: "/" },
-      { text: "Управление финансами", component: finances, id: 8, to: "/" },
+      {
+        text: "Настройки профиля",
+        component: settingsProfile,
+        id: 7,
+        to: "/settings_profile",
+      },
+      {
+        text: "Управление финансами",
+        component: finances,
+        id: 8,
+        to: "/finances",
+      },
     ],
   },
 
-  { text: "Выход", component: out, id: 9, to: "/" },
+  { text: "Выход", component: out, id: 9, to: "/out" },
 ];
 export const POINT_API =
   "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";

@@ -1,0 +1,13 @@
+@import "./../../global/index.scss";
+.ErrorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  svg {
+    fill: $bg-theme;
+    margin-top: 24px;
+    width: 100px;
+    height: 100px;
+  }
+}
