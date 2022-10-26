@@ -23,6 +23,7 @@ const useFetching = (url: string, query: string) => {
       setLoading(false);
     }
   }
+
   return { loading, error, results, fetchData };
 };
 export default useFetching;

@@ -8,14 +8,14 @@ type MiniMenuPropsType = {
 };
 
 const MiniMenu: FC<MiniMenuPropsType> = ({ toggleMenu, setToggleMenu }) => {
+  const classes = `MiniMenu ${toggleMenu ? "active" : undefined}`;
+
   function toggleMenuHandler() {
     setToggleMenu((prev) => !prev);
   }
+
   return (
-    <div
-      className={`MiniMenu ${toggleMenu ? "active" : undefined}`}
-      onClick={toggleMenuHandler}
-    >
+    <div className={classes} onClick={toggleMenuHandler}>
       <span></span>
       <span></span>
       <span></span>

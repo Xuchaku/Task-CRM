@@ -5,6 +5,7 @@ import ComplexItemMenu from "../ComplexItemMenu/ComplexItemMenu";
 import SimpleItemMenu from "../SimpleItemMenu/SimpleItemMenu";
 
 import "./Sidebar.scss";
+
 const Sidebar = () => {
   return (
     <div className="Sidebar">

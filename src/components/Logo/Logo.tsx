@@ -1,6 +1,7 @@
 import React from "react";
 
 import { ReactComponent } from "./../../assets/svgs/logo.svg";
+
 import "./Logo.scss";
 
 const Logo = () => {

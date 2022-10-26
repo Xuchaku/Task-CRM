@@ -8,11 +8,14 @@ import "./Layout.scss";
 
 const Layout = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
+
+  const classes = `Layout ${toggleMenu ? "activeMenu" : undefined}`;
+
   return (
-    <div className={`Layout ${toggleMenu ? "activeMenu" : undefined}`}>
+    <div className={classes}>
       <Header toggleMenu={toggleMenu} setToggleMenu={setToggleMenu}></Header>
       <Sidebar></Sidebar>
-      <Outlet></Outlet>
+      <Outlet context={setToggleMenu}></Outlet>
     </div>
   );
 };

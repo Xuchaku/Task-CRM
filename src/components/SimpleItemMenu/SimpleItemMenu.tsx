@@ -13,15 +13,14 @@ const SimpleItemMenu: FC<SimpleItemMenuPropsType> = ({
   options,
   level = 0,
 }) => {
-  const { text, component: ElemSvg, to } = options;
   const [activeStyle, setActiveStyle] = useState<boolean>(false);
 
+  const { text, component: ElemSvg, to } = options;
   const levelMarginStyle = { marginLeft: level * 48 + "px" };
+  const classes = `SimpleItemMenu ${activeStyle ? "active" : undefined}`;
+
   return (
-    <div
-      style={levelMarginStyle}
-      className={`SimpleItemMenu ${activeStyle ? "active" : undefined}`}
-    >
+    <div style={levelMarginStyle} className={classes}>
       <ElemSvg></ElemSvg>
       <h2>
         <NavLink

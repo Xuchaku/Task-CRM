@@ -11,11 +11,13 @@ import "./Address.scss";
 const Address = () => {
   const [search, setSearch] = useState<string>("");
   const { loading, error, results, fetchData } = useFetching(POINT_API, search);
+
   function startSearchHandler() {
     if (search.length > 3) {
       fetchData();
     }
   }
+
   return (
     <div className="Address">
       <h2>Поиск адресов</h2>

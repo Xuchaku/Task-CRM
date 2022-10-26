@@ -6,6 +6,7 @@ import "./ListAddress.scss";
 type ListAddressTypeProps = {
   results: Place[];
 };
+
 const ListAddress: FC<ListAddressTypeProps> = ({ results }) => {
   return (
     <div className="ListAddress">

@@ -16,6 +16,7 @@ const InputText: FC<InputTextPropsType> = ({
   function changeSearchHandler(event: ChangeEvent<HTMLInputElement>) {
     setSearch(event.target.value);
   }
+
   return (
     <input
       className="InputText"

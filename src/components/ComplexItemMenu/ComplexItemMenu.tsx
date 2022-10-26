@@ -9,17 +9,18 @@ type ComplexItemMenuPropsType = {
 };
 
 const ComplexItemMenu: FC<ComplexItemMenuPropsType> = ({ options }) => {
-  const { children: childrenItems } = options;
   const [open, setOpen] = useState<boolean>(false);
+
+  const { children: childrenItems } = options;
+  const classes = `ComplexItemMenu ${open ? "up" : "down"}`;
+
   function toggleMenuHandler() {
     setOpen(!open);
   }
+
   return (
     <>
-      <div
-        className={`ComplexItemMenu ${open ? "up" : "down"}`}
-        onClick={toggleMenuHandler}
-      >
+      <div className={classes} onClick={toggleMenuHandler}>
         <SimpleItemMenu options={options}></SimpleItemMenu>
       </div>
       {open &&
