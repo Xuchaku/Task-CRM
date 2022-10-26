@@ -1,0 +1,15 @@
+.Layout {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main";
+}
+.Layout div:nth-child(1) {
+  grid-area: header;
+}
+.Layout div:nth-child(2) {
+  grid-area: sidebar;
+}
+.Layout div:nth-child(3) {
+  grid-area: main;
+}
