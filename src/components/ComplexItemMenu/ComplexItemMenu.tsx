@@ -9,18 +9,18 @@ type ComplexItemMenuPropsType = {
 };
 
 const ComplexItemMenu: FC<ComplexItemMenuPropsType> = ({ options }) => {
-  const { text, component: ElemSvg, children: childrenItems, to } = options;
+  const { children: childrenItems } = options;
   const [open, setOpen] = useState<boolean>(false);
   function toggleMenuHandler() {
     setOpen(!open);
   }
   return (
     <>
-      <div className="ComplexItemMenu" onClick={toggleMenuHandler}>
-        <ElemSvg></ElemSvg>
-        <h2>
-          <NavLink to={to}>{text}</NavLink>
-        </h2>
+      <div
+        className={`ComplexItemMenu ${open ? "up" : "down"}`}
+        onClick={toggleMenuHandler}
+      >
+        <SimpleItemMenu options={options}></SimpleItemMenu>
       </div>
       {open &&
         childrenItems?.map((itemMenu) => {

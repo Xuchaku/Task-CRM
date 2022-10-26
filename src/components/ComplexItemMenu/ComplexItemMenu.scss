@@ -1,19 +1,18 @@
 .ComplexItemMenu {
   position: relative;
-  display: flex;
-  flex-direction: row;
-  padding: 24px 0;
-  column-gap: 20px;
-  h2 {
-    font-weight: 600;
-  }
+}
+.ComplexItemMenu.up::after {
+  transform: rotate(180deg);
+}
+.ComplexItemMenu.down::after {
+  transform: rotate(0);
 }
 .ComplexItemMenu::after {
   content: "";
   display: block;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   right: 20px;
   border: 6px solid transparent;

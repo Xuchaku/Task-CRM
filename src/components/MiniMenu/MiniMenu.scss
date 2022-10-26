@@ -1,0 +1,47 @@
+.MiniMenu {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px;
+  margin-left: 24px;
+  cursor: pointer;
+  position: relative;
+  span {
+    position: absolute;
+  }
+}
+
+.MiniMenu.active span:nth-child(1),
+.MiniMenu.active span:nth-child(3) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.MiniMenu.active span:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.MiniMenu span:nth-child(1),
+.MiniMenu span:nth-child(2),
+.MiniMenu span:nth-child(3) {
+  transition: 0.2s;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.MiniMenu span:nth-child(1) {
+  background-color: white;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.MiniMenu span:nth-child(2) {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.MiniMenu span:nth-child(3) {
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+}

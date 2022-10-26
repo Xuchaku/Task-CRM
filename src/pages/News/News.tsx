@@ -2,7 +2,6 @@ import React from "react";
 import "./News.scss";
 import { paragraphs } from "../../constants/paragraphs";
 const News = () => {
-  console.log(paragraphs.length);
   return (
     <div className="News">
       <h2>Новости</h2>

@@ -10,3 +10,11 @@
   justify-content: space-between;
   align-items: center;
 }
+.Header > div:first-child {
+  display: none;
+}
+@media (max-width: 768px) {
+  .Header > div:first-child {
+    display: block;
+  }
+}
