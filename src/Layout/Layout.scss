@@ -14,7 +14,7 @@
   }
   .Layout > div:nth-child(2) {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     left: -300px;
   }
   .Layout.activeMenu > div:nth-child(2) {
