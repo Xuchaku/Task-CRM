@@ -11,21 +11,22 @@ import { ReactComponent as out } from "./../assets/svgs/out.svg";
 import Menu from "../types/Menu/Menu";
 
 export const menu: Menu[] = [
-  { text: "Главная", component: home, id: 0 },
-  { text: "Поиск адресов", component: search, id: 1 },
-  { text: "Таблицы", component: tables, id: 2 },
-  { text: "Календарь", component: dates, id: 3 },
-  { text: "Карты", component: maps, id: 4 },
-  { text: "Виджеты", component: vidgets, id: 5 },
+  { text: "Главная", component: home, id: 0, to: "/" },
+  { text: "Поиск адресов", component: search, id: 1, to: "address" },
+  { text: "Таблицы", component: tables, id: 2, to: "/" },
+  { text: "Календарь", component: dates, id: 3, to: "/" },
+  { text: "Карты", component: maps, id: 4, to: "/" },
+  { text: "Виджеты", component: vidgets, id: 5, to: "/" },
   {
     text: "Настройки",
     component: settings,
     id: 6,
+    to: "/",
     children: [
-      { text: "Настройки профиля", component: settingsProfile, id: 7 },
-      { text: "Управление финансами", component: finances, id: 8 },
+      { text: "Настройки профиля", component: settingsProfile, id: 7, to: "/" },
+      { text: "Управление финансами", component: finances, id: 8, to: "/" },
     ],
   },
 
-  { text: "Выход", component: out, id: 9 },
+  { text: "Выход", component: out, id: 9, to: "/" },
 ];

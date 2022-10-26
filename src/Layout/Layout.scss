@@ -5,13 +5,24 @@
     "sidebar main main main";
   min-height: 200vh;
   grid-template-rows: 80px auto;
+  grid-template-columns: 300px auto;
 }
-.Layout div:nth-child(1) {
+@media (max-width: 768px) {
+  .Layout {
+    position: relative;
+    grid-template-columns: 0px auto;
+  }
+  .Layout > div:nth-child(2) {
+    position: absolute;
+    left: -300px;
+  }
+}
+.Layout > div:nth-child(1) {
   grid-area: header;
 }
-.Layout div:nth-child(2) {
+.Layout > div:nth-child(2) {
   grid-area: sidebar;
 }
-.Layout div:nth-child(3) {
+.Layout > div:nth-child(3) {
   grid-area: main;
 }

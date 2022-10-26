@@ -10,18 +10,9 @@ const Sidebar = () => {
       <div className="Menu">
         {menu.map((item) => {
           return !item.children ? (
-            <SimpleItemMenu
-              key={item.id}
-              text={item.text}
-              svg={item.component}
-            />
+            <SimpleItemMenu key={item.id} options={item} />
           ) : (
-            <ComplexItemMenu
-              key={item.id}
-              text={item.text}
-              svg={item.component}
-              childrenItems={item.children}
-            />
+            <ComplexItemMenu key={item.id} options={item} />
           );
         })}
       </div>

@@ -3,5 +3,6 @@ type Menu = {
   text: string;
   component: React.FunctionComponent;
   children?: Menu[];
+  to: string;
 };
 export default Menu;

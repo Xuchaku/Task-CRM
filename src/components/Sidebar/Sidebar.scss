@@ -8,9 +8,12 @@
     margin-top: 24px;
     margin-bottom: 36px;
   }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 .Menu {
   display: flex;
   flex-direction: column;
-  row-gap: 48px;
 }
