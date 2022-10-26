@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import { NavLink } from "react-router-dom";
+
 import Menu from "../../types/Menu/Menu";
 import SimpleItemMenu from "../SimpleItemMenu/SimpleItemMenu";
 import "./ComplexItemMenu.scss";

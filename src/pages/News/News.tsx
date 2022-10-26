@@ -1,6 +1,9 @@
 import React from "react";
-import "./News.scss";
+
 import { paragraphs } from "../../constants/paragraphs";
+
+import "./News.scss";
+
 const News = () => {
   return (
     <div className="News">

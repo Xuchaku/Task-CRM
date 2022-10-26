@@ -1,6 +1,9 @@
 import React from "react";
-import "./User.scss";
+
 import { ReactComponent } from "./../../assets/svgs/user.svg";
+
+import "./User.scss";
+
 const User = () => {
   return (
     <div className="User">

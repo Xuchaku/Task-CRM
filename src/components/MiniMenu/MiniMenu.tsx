@@ -1,5 +1,7 @@
 import React, { FC } from "react";
+
 import "./MiniMenu.scss";
+
 type MiniMenuPropsType = {
   toggleMenu: boolean;
   setToggleMenu: React.Dispatch<React.SetStateAction<boolean>>;

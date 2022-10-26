@@ -1,6 +1,9 @@
 import React from "react";
-import "./ErrorPage.scss";
+
 import { ReactComponent as ErrorSvg } from "./../../assets/svgs/error.svg";
+
+import "./ErrorPage.scss";
+
 const ErrorPage = () => {
   return (
     <div className="ErrorPage">

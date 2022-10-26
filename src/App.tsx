@@ -1,10 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import "./App.scss";
+
 import Layout from "./Layout/Layout";
 import Address from "./pages/Address/Address";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import News from "./pages/News/News";
+
+import "./App.scss";
 
 function App() {
   return (

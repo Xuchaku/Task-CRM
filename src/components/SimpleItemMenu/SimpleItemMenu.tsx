@@ -1,7 +1,9 @@
 import React, { FC, useState } from "react";
 import { NavLink } from "react-router-dom";
+
 import Menu from "../../types/Menu/Menu";
 import "./SimpleItemMenu.scss";
+
 type SimpleItemMenuPropsType = {
   options: Menu;
   level?: number;

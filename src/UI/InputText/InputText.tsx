@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FC } from "react";
+
 import "./InputText.scss";
 
 type InputTextPropsType = {
@@ -6,6 +7,7 @@ type InputTextPropsType = {
   search: string;
   setSearch: React.Dispatch<React.SetStateAction<string>>;
 };
+
 const InputText: FC<InputTextPropsType> = ({
   placeholder,
   search,
