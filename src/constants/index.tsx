@@ -30,3 +30,6 @@ export const menu: Menu[] = [
 
   { text: "Выход", component: out, id: 9, to: "/" },
 ];
+export const POINT_API =
+  "https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/address";
+export const TOKEN = "ff4d5c5e04a92dc0f109f34bd3a60b51411ae497";
