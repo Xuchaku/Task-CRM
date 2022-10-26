@@ -1,0 +1,11 @@
+@import "./../../global/index.scss";
+.User {
+  margin-right: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 16px;
+  h2 {
+    font-size: $font-size-default;
+  }
+}

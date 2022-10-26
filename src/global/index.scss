@@ -1,4 +1,11 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("./../assets/fonts/Montserrat-Regular.ttf");
+}
+
 $font-family-default: "Montserrat";
 $font-size-default: 20px;
 $font-size-header: 24px;
 $font-color-default: black;
+
+$bg-theme: #4f27bf;

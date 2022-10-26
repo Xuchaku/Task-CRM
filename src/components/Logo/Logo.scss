@@ -1,0 +1,11 @@
+@import "./../../global/index.scss";
+.Logo {
+  margin-left: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 24px;
+  h2 {
+    font-size: $font-size-default;
+  }
+}
