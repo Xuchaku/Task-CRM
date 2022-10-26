@@ -5,7 +5,6 @@
     "sidebar main main main";
   min-height: 200vh;
   grid-template-rows: 80px auto;
-  border: 1px solid red;
 }
 .Layout div:nth-child(1) {
   grid-area: header;
